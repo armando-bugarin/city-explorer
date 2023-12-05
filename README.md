@@ -31,16 +31,16 @@ Currently, two official plugins are available:
 
 ### Time Estimate Lab 6
 
-Name of feature:
+Name of feature: City Explorer
 
-Estimate of time needed to complete:
+Estimate of time needed to complete: 4 hours
 
-Start time:
+Start time:4 pm
 
-Finish time:
+Finish time: 10 pm
 
-Actual time needed to complete:
+Actual time needed to complete: 6 hours
 
 ### Lighthouse Report Lab 6
 
-![lighthouse report lab 6]()
+![lighthouse report lab 6](lab6lh.png)
