@@ -1,11 +1,21 @@
+
+import Accordion from 'react-bootstrap/Accordion';
+
 const Weather = (props) => {
     return (
         <>
             <h2>Weather Forecast:</h2>
+            <Accordion defaultActiveKey="0">
 
-            {props.weather.map((forecast, index) => (
-                <><p>{forecast.date}</p><p>{forecast.description}</p></>
-            ))}
+                {props.weather.map((forecast, index) => (
+                    <Accordion.Item eventKey="0" key={index}>
+
+                        <Accordion.Header><p>{forecast.date}</p></Accordion.Header>
+                        <Accordion.Body><p>{forecast.description}</p></Accordion.Body>
+
+                    </Accordion.Item>
+                ))}
+            </Accordion>
         </>
     );
 };
