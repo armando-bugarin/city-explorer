@@ -35,7 +35,7 @@ function App() {
     }
   }
 
-  async function getWeather(lat, lon) { // 34 to 40 is lab 7 addition
+  async function getWeather(lat, lon) { // lab 7 addition
     console.log(lat, lon);
     try {
       const response = await axios.get(`http://localhost:3001/weather?searchQuery=${findCity}`);
@@ -43,6 +43,7 @@ function App() {
       console.log(response.data);
     } catch (error) {
       setError('An error occurred with the API call');
+      alert(`${error.message}. Sorry, we don't have weather data for this city`);
     }
   }
 
