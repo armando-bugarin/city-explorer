@@ -7,7 +7,7 @@ import { Alert } from 'bootstrap';
 import Weather from './Weather'; // lab 7 addition
 import './App.css';
 
-const key = import.meta.env.VITE_API_KEY;
+const key = import.meta.env.VITE_API_KEY; // key is map api
 
 function App() {
 

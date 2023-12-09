@@ -48,3 +48,5 @@ Actual time needed to complete: 6 hours
 ### Lighthouse Report Lab 7
 
 ![lighthouse report lab 7](lhlab7.png)
+
+![lighthouse report lab 8]()
