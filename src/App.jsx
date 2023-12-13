@@ -5,6 +5,7 @@ import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Alert } from 'bootstrap';
 import Weather from './Weather'; // lab 7 addition
+// import Movies from './Movies'; // lab 8.2 addition
 import './App.css';
 
 const key = import.meta.env.VITE_API_KEY; // key is map api
@@ -15,6 +16,7 @@ function App() {
   const [findCity, setFindCity] = useState('');
   const [error, setError] = useState(null);
   const [weather, setWeather] = useState([]); // lab 7 addition
+  // const [movies, setMovies] = useState([]); // lab 8.2 addition
 
   useEffect(() => { // 17 to 20 is lab 7 addition
     console.log(location);
@@ -81,6 +83,7 @@ function App() {
       {weather.length > 0 && ( // 74 to 83 is lab 7 addition
         <>
           <Weather weather={weather} />
+          {/* <Movies movies={movie} /> // lab 8.2 addition */}
         </>
       )}
     </>
